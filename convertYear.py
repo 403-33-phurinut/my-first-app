@@ -5,12 +5,12 @@ bhYear = st.number_input("กรอกปี พ.ศ.")
 ceYear = st.number_input("กรอกปี ค.ศ.")
 value = 543
 if bhYear > 0:
-  str(ceResult) = bhYear - value
+  ceResult = bhYear - value
 else:
   ceResult = "กรอกข้อมูล"
 
 if ceYear > 0:
-  str(bhResult) = ceYear - value
+  bhResult = ceYear - value
 else:
   bhResult = "กรอกข้อมูล"
   
