@@ -14,5 +14,5 @@ if ceYear > 0:
 else:
   bhResult = "กรอกข้อมูล"
   
-st.header(f"ปี ค.ศ. คือ: {ceResult}")
-st.header(f"ปี พ.ศ. คือ: {bhResult}")
+st.subheader(f"ปี ค.ศ. คือ: {ceResult}")
+st.subheader(f"ปี พ.ศ. คือ: {bhResult}")
