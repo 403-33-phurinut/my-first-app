@@ -2,18 +2,18 @@ import streamlit as st
 st.title("แอปพลิเคชั่นแปลง พ.ศ. เป็น ค.ศ.")
 st.caption("มีการดัดแปลง")
 
-bhYear = st.number_input("กรอกปี พ.ศ.")
-ceYear = st.number_input("กรอกปี ค.ศ.")
 value = 543
+bhYear = st.number_input("กรอกปี พ.ศ.") - value
+ceYear = st.number_input("กรอกปี ค.ศ.") - value
 if bhYear > 0:
-  ceResult = bhYear - value
-else:
-  ceResult = "กรอกข้อมูล"
+  ceResult = bhYear
+elif bhYear <= 0:
+  ceResult = f"ก่อนคริสต์ศักราช {bhYear} ปี"
 
 if ceYear > 0:
   bhResult = ceYear - value
-else:
-  bhResult = "กรอกข้อมูล"
+elif ceYear <= 0:
+  bhResult = f"ก่อนคริสต์ศักราช {ceYear} ปี"
   
 st.subheader(f"ปี ค.ศ. คือ: {ceResult}")
 st.subheader(f"ปี พ.ศ. คือ: {bhResult}")
