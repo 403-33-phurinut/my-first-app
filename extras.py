@@ -8,3 +8,6 @@ st.divider()
 
 
 st.header("2.1 work")
+code = '''def hello():
+    print("Hello, Streamlit!")'''
+st.code(code, language="python")
