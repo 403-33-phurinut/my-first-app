@@ -3,17 +3,17 @@ st.title("แอปพลิเคชั่นแปลง พ.ศ. เป็น
 st.caption("มีการดัดแปลง")
 
 value = 543
-bhYear = abs(st.number_input("กรอกปี พ.ศ.") - value)
-ceYear = abs(st.number_input("กรอกปี ค.ศ.") - value)
+bhYear = st.number_input("กรอกปี พ.ศ.") - value
+ceYear = st.number_input("กรอกปี ค.ศ.") - value
 if bhYear > 0:
   ceResult = bhYear
 elif bhYear <= 0:
-  ceResult = f"ก่อนคริสต์ศักราช {bhYear} ปี"
+  ceResult = f"ก่อนคริสต์ศักราช abs({bhYear}) ปี"
 
 if ceYear > 0:
   bhResult = ceYear - value
 elif ceYear <= 0:
-  bhResult = f"ก่อนคริสต์ศักราช {ceYear} ปี"
+  bhResult = f"ก่อนคริสต์ศักราช abs({ceYear}) ปี"
   
 st.subheader(f"ปี ค.ศ. คือ: {ceResult}")
 st.subheader(f"ปี พ.ศ. คือ: {bhResult}")
