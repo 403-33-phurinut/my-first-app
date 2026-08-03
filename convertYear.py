@@ -4,7 +4,7 @@ st.caption("มีการดัดแปลง")
 
 value = 543
 bhYear = int(st.number_input("กรอกปี พ.ศ.") - value)
-ceYear = int(value - st.number_input("กรอกปี ค.ศ."))
+ceYear = int(st.number_input("กรอกปี ค.ศ.") + value)
 if bhYear > 0:
   ceResult = bhYear
 elif bhYear <= 0:
