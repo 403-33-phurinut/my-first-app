@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("__Extras & documentation__")
+st.title("<u>Extras & documentation<u>")
 st.subheader("Aka, free codes")
 st.divider()
 
