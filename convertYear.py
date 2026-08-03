@@ -3,8 +3,8 @@ st.title("แอปพลิเคชั่นแปลง พ.ศ. เป็น
 st.caption("มีการดัดแปลง")
 
 value = 543
-bhYear = st.number_input("กรอกปี พ.ศ.") - value
-ceYear = st.number_input("กรอกปี ค.ศ.") - value
+bhYear = abs(st.number_input("กรอกปี พ.ศ.") - value)
+ceYear = abs(st.number_input("กรอกปี ค.ศ.") - value)
 if bhYear > 0:
   ceResult = bhYear
 elif bhYear <= 0:
