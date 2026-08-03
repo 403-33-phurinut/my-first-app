@@ -11,7 +11,7 @@ elif bhYear <= 0:
   ceResult = f"ก่อนคริสต์ศักราช {abs(bhYear)} ปี"
 
 if ceYear > 0:
-  bhResult = ceYear - value
+  bhResult = ceYear
 elif ceYear <= 0:
   bhResult = f"ก่อนพุทธศักราช {abs(ceYear)} ปี"
   
