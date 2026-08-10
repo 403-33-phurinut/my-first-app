@@ -10,5 +10,5 @@ height = st.number_input("กรอกส่วนสูงของคุณ (�
 if st.button(":material/info: คำนวณ BMI"):
   hMeter = height/100
   bmi = weight/(hMeter**2)
-  st.write(f"ค่าดัชนีมวลกาย/BMI ของคุณคือ: ***{bmi:.2f} kg/m²***")
+  st.write(f"## ค่าดัชนีมวลกาย/BMI ของคุณคือ: ***{bmi:.2f} kg/m²***")
   
