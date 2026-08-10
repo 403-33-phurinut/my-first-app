@@ -21,4 +21,4 @@ if st.button("**:material/info:** คำนวณ BMI"):
   else:
     st.badge("คุณอยู่ในเกณฑ์อ้วน ควรระวังเรื่องสุขภาพและออกกำลังกาย",icon=":material/Dangerous")
 st.divider()
-st.writer("นาย **ภูริณัฐ บ่อไทย** เลขที่ **33** ม.**4/3**")
+st.writer("นาย ภูริณัฐ บ่อไทย เลขที่ 33 ม.4/3")
