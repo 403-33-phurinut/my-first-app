@@ -19,6 +19,6 @@ if st.button("**:material/info:** คำนวณ BMI"):
   elif 23.0 <= bmi < 25.0:
     st.badge("คุณเริ่มมีน้ำหนักเกินเกณฑ์ (ท้วม)",icon=:material/warning:)
   else:
-    st.badge("คุณอยู่ในเกณฑ์อ้วน ควรระวังเรื่องสุขภาพและออกกำลังกาย,icon=:material/dangerous:)
+    st.badge("คุณอยู่ในเกณฑ์อ้วน ควรระวังเรื่องสุขภาพและออกกำลังกาย",icon=:material/dangerous:)
 st.divider()
 st.write("นาย ภูริณัฐ บ่อไทย เลขที่ 33 ม.4/3")
