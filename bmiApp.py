@@ -17,7 +17,7 @@ if st.button("**:material/info:** คำนวณ BMI"):
   elif 18.5 <= bmi < 23.0:
     st.badge("คุณมีน้ำหนักอยู่ในเกณฑ์ปกติ (สุขภาพดี)",icon=:material/check:)
   elif 23.0 <= bmi < 25.0:
-    st.badge("คุณเริ่มมีน้ำหนักเกินเกณฑ์ (ท้วม)",icon=:material/warning")
+    st.badge("คุณเริ่มมีน้ำหนักเกินเกณฑ์ (ท้วม)",icon=:material/warning:)
   else:
     st.badge("คุณอยู่ในเกณฑ์อ้วน ควรระวังเรื่องสุขภาพและออกกำลังกาย,icon=:material/dangerous:)
 st.divider()
