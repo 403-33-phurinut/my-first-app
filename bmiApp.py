@@ -13,7 +13,7 @@ if st.button("**:material/info:** คำนวณ BMI"):
   st.write(f"### ค่าดัชนีมวลกาย/BMI ของคุณคือ: ***{bmi:.2f} kg/m²***")
 
   if bmi < 18.5:
-    st.badge("คุณมีน้ำหนักน้อยกว่าเกณฑ์ (ผอม)",icon=":material/warning:",color="yellow")
+    st.badge("คุณมีน้ำหนักน้อยกว่าเกณฑ์ (ผอม)",icon=**":material/warning:"**,color="yellow")
   elif 18.5 <= bmi < 23.0:
     st.badge("คุณมีน้ำหนักอยู่ในเกณฑ์ปกติ (สุขภาพดี)",icon=":material/check:",color="green")
   elif 23.0 <= bmi < 25.0:
