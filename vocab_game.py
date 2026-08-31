@@ -15,11 +15,7 @@ def reset_game():
     st.session_state.ans2_val = ""  
     st.session_state.start = time.time()  
     st.session_state.is_ended = False  
-
-
-# ----------------------------------------------------
-# 📌 ฟังก์ชัน MessageBox (Dialog)
-# ----------------------------------------------------
+    
 @st.dialog(":material/bar_chart: สรุปผลการเล่นเกม")
 def show_result_dialog(ans1, ans2):
     st.balloons()
@@ -44,12 +40,12 @@ def show_result_dialog(ans1, ans2):
 
     # ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มตรวจข้อ 3, 4 ตรงนี้
 
-    st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
+    st.info(f":material/trophy: ได้คะแนนรวม: {score} คะแนน")
 
     if score == 2:
-        st.success("🎉 You win!")
+        st.success(":material/award_star: You win!")
     else:
-        st.error("💀 You lose!")
+        st.error(":material/close: You lose!")
 
 
 # ----------------------------------------------------
