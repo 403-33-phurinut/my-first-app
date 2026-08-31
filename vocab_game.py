@@ -5,25 +5,22 @@ st.markdown("# :blue[***:material/Timer: เกมเติมศัพท์จ
 st.write("*เกมเติมศัพท์จับเวลาที่ให้คุณเติมคำตอบภายในเวลา*")
 st.divider()
 
-# 1. กำหนดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
 if "ans1_val" not in st.session_state:
     st.session_state.ans1_val = ""
 if "ans2_val" not in st.session_state:
     st.session_state.ans2_val = ""
 
-
-# 📌 ฟังก์ชันเคลียร์ค่าเมื่อกดปุ่มเริ่มใหม่
 def reset_game():
-    st.session_state.ans1_val = ""  # เคลียร์ค่าช่องข้อ 1
-    st.session_state.ans2_val = ""  # เคลียร์ค่าช่องข้อ 2
-    st.session_state.start = time.time()  # เริ่มเวลาใหม่
-    st.session_state.is_ended = False  # ปิด Dialog
+    st.session_state.ans1_val = "" 
+    st.session_state.ans2_val = ""  
+    st.session_state.start = time.time()  
+    st.session_state.is_ended = False  
 
 
 # ----------------------------------------------------
 # 📌 ฟังก์ชัน MessageBox (Dialog)
 # ----------------------------------------------------
-@st.dialog("📊 สรุปผลการเล่นเกม")
+@st.dialog(":material/bar_chart: สรุปผลการเล่นเกม")
 def show_result_dialog(ans1, ans2):
     st.balloons()
     score = 0
