@@ -1,7 +1,9 @@
 import time
 import streamlit as st
 
-st.title("⏱️ เกมเติมศัพท์จับเวลา")
+st.markdown("# :red[***:material/Timer: เกมเติมศัพท์จับเวลา***]")
+st.write("*กรอกข้อมูลน้ำหนักและส่วนสูงของคุณ เพื่อเช็กสุขภาพเบื้องต้น*")
+st.divider()
 
 # 1. กำหนดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
 if "ans1_val" not in st.session_state:
@@ -101,4 +103,5 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2)
 
 st.divider()
-st.write("นาย ภูริณ เลขที่ 33 ม.4/3")
+st.caption("สร้างโดย")
+st.markdown("นาย **ภูริณัฐ บ่อไทย** เลขที่ **33** ม.**4/3**")
