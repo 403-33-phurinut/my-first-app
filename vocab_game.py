@@ -60,10 +60,10 @@ def show_result_dialog(ans1, ans2):
 
     if score >= 3:
         st.success(":material/award_star: คุณชนะ!")
-        st.write("ได้ {score}/4 คะแนน")
+        st.write(f"ได้ {score}/4 คะแนน")
     else:
         st.error(":material/close: คุณแพ้!")
-        st.write("ได้ {score}/4 คะแนน")
+        st.write(f"ได้ {score}/4 คะแนน")
 
 st.button(":material/sports_esports: เริ่มเล่นเกม", on_click=reset_game)
 
