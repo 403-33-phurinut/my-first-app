@@ -1,8 +1,8 @@
 import time
 import streamlit as st
 
-st.markdown("# :red[***:material/Timer: เกมเติมศัพท์จับเวลา***]")
-st.write("*กรอกข้อมูลน้ำหนักและส่วนสูงของคุณ เพื่อเช็กสุขภาพเบื้องต้น*")
+st.markdown("# :blue[***:material/Timer: เกมเติมศัพท์จับเวลา***]")
+st.write("*เกมเติมศัพท์จับเวลาที่ให้คุณเติมคำตอบภายในเวลา*")
 st.divider()
 
 # 1. กำหนดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
