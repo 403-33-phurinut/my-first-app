@@ -24,7 +24,6 @@ def reset_game():
     
 @st.dialog(":material/bar_chart: สรุปผลการเล่นเกม")
 def show_result_dialog(ans1, ans2):
-    st.balloons()
     score = 0
 
     u_ans1 = ans1.strip().lower()
@@ -61,6 +60,7 @@ def show_result_dialog(ans1, ans2):
     if score >= 3:
         st.success(":material/award_star: คุณชนะ!")
         st.write(f"ได้ {score}/4 คะแนน")
+        st.balloons()
     else:
         st.error(":material/close: คุณแพ้!")
         st.write(f"ได้ {score}/4 คะแนน")
