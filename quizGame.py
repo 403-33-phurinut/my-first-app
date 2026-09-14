@@ -79,29 +79,29 @@ if "start" in stss and not stss.get("is_ended", False):
 
 st.divider()
 
-a1c1 = '''text = string'''
-a1c2 = '''text = "string"'''
-a1c3 = '''text = [string]'''
-a1c4 = '''text = <string>'''
+a1c1 = st.code('''text = string''')
+a1c2 = st.code('''text = "string"''')
+a1c3 = st.code('''text = [string]''')
+a1c4 = st.code('''text = <string>''')
 
-a2c1 = '''num = 1'''
-a2c2 = '''num = 3.14'''
-a2c3 = '''num = "string"'''
-a2c4 = '''num = true'''
+a2c1 = st.code('''num = 1''')
+a2c2 = st.code('''num = 3.14''')
+a2c3 = st.code('''num = "string"''')
+a2c4 = st.code('''num = true''')
 
-a3c1 = '''float = 1'''
-a3c2 = '''float = 3.14'''
-a3c3 = '''float = "string"'''
-a3c4 = '''float = true'''
+a3c1 = st.code('''float = 1''')
+a3c2 = st.code('''float = 3.14''')
+a3c3 = st.code('''float = "string"''')
+a3c4 = st.code('''float = true''')
 
-a4c1 = '''def loop():
-        print("Hello world!")'''
-a4c2 = '''def iterate(arg1,arg2):
+a4c1 = st.code('''def loop():
+        print("Hello world!")''')
+a4c2 = st.code('''def iterate(arg1,arg2):
         if arg1 >= arg2:
-            return true'''
-a4c3 = '''loop == "string"'''
-a4c4 = '''for i in range(5):
-        print("Hello world!")'''
+            return true''')
+a4c3 = st.code('''loop == "string"''')
+a4c4 = st.code('''for i in range(5):
+        print("Hello world!")''')
 
 ans1 = st.radio(
     "***1. ข้อใดคือ \"string\" ใน python***",
