@@ -105,7 +105,7 @@ a4c4 = st.code('''for i in range(5):
 
 ans1 = st.radio(
     "***1. ข้อใดคือ \"string\" ใน python***",
-    [a1c1,a1c2,a1c3,a1c4],
+    [st.code('''text = string'''),a1c2,a1c3,a1c4],
     key=stss.ans1_val,
 )
 ans2 = st.radio(
