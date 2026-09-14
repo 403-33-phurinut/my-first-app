@@ -24,7 +24,7 @@ def reset_game():
     stss.is_ended = False  
     
 @st.dialog(":material/bar_chart: สรุปผลการเล่นเกม")
-def show_result_dialog(ans1, ans2):
+def show_result_dialog(ans1, ans2, ans3, ans4):
     score = 0
 
     u_ans1 = ans1.strip().lower()
@@ -110,7 +110,7 @@ if "start" in stss and not stss.get("is_ended", False):
     st.rerun()
 
 if stss.get("is_ended", False):
-    show_result_dialog(ans1, ans2)
+    show_result_dialog(ans1, ans2, ans3, ans4)
 
 st.divider()
 st.caption("สร้างโดย")
