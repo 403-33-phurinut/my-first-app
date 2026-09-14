@@ -121,10 +121,10 @@ ans3 = st.radio(
 ans4 = st.radio(
     "***4. ข้อใดคือ iteration ใน python***",
     [
-        "'for i in range(5):\n    print("Hello World!")'",
-        "'def iterate():\n    print("Hello World!")'",
-        "'iterate == true'",
-        "'iterate = inf'"
+        "''for i in range(5):\n    print("Hello World!")''",
+        "''def iterate():\n    print("Hello World!")''",
+        "''iterate == true'",
+        "''iterate = inf'"
     ],
     key=stss.ans4_val,
 )
