@@ -79,21 +79,56 @@ if "start" in stss and not stss.get("is_ended", False):
 
 st.divider()
 
+a1c1 = '''text = string'''
+a1c2 = '''text = "string"'''
+a1c3 = '''text = [string]'''
+a1c4 = '''text = <string>'''
+
+a2c1 = '''num = 1'''
+a2c2 = '''num = 3.14'''
+a2c3 = '''num = "string"'''
+a2c4 = '''num = true'''
+
+a3c1 = '''float = 1'''
+a3c2 = '''float = 3.14'''
+a3c3 = '''float = "string"'''
+a3c4 = '''float = true'''
+
+a4c1 = '''def loop():
+        print("Hello world!")'''
+a4c2 = '''def iterate(arg1,arg2):
+        if arg1 >= arg2:
+            return true'''
+a4c3 = '''loop == "string"'''
+a4c4 = '''for i in range(5):
+        print("Hello world!")'''
+
 ans1 = st.radio(
-    "1. ข้อใดคือ \"string\" ใน python",
-    ["string","\"string\"","[string]","<string>"],
+    "***1. ข้อใดคือ \"string\" ใน python***",
+    [a1c1,a1c2,a1c3,a1c4],
     key=stss.ans1_val,
 )
 ans2 = st.radio(
-    "2. ข้อใดคือ \"interger\" ใน python",
+    "***2. ข้อใดคือ \"interger\" ใน python***",
+    [a2c1,a2c2,a2c3,a2c4],
     key=stss.ans2_val,
 )
 ans3 = st.radio(
-    "3. ข้อใดคือ \"float\" ใน python",
+    "***3. ข้อใดคือ \"float\" ใน python***",
+    [a3c1,a3c2,a3c3,a3c4],
     key=stss.ans3_val,
 )
 ans4 = st.radio(
-    "4. ข้อใดคือ \"string\" ใน python",
+    "***4. ข้อใดคือ iteration ใน python***",
+    [a4c1,a4c2,a4c3,a4c4],
+    key=stss.ans4_val,
+)
+ans5 = st.radio(
+    "***5. ข้อใดจะทำให้เกิด error ใน python***",
+    key=stss.ans4_val,
+)
+ans6 = st.radio(
+    "***6. ข้อใดไม่ใช่ภาษา python***",
     key=stss.ans4_val,
 )
 
