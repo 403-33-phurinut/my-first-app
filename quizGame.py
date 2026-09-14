@@ -32,7 +32,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4):
     u_ans3 = ans3.strip().lower()
     u_ans4 = ans4.strip().lower()
 
-    if u_ans1 == "apple":
+    if u_ans1 == 1:
         st.success(":material/check: ข้อ 1: ถูกต้อง")
         score += 1
     else:
@@ -79,21 +79,22 @@ if "start" in stss and not stss.get("is_ended", False):
 
 st.divider()
 
-ans1 = st.text_input(
-    "ข้อ 1: An `a _ _ l e` a day keeps the doctor away. :material/nutrition",
-    value=stss.ans1_val,
+ans1 = st.radio(
+    "1. ข้อใดคือ \"string\" ใน python",
+    ["string","\"string\"","[string]","<string>"],
+    key=stss.ans1_val,
 )
-ans2 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. :material/set_meal:",
-    value=stss.ans2_val,
+ans2 = st.radio(
+    "2. ข้อใดคือ \"interger\" ใน python",
+    key=stss.ans2_val,
 )
-ans3 = st.text_input(
-    "ข้อ 4: In order to make a soup, you must `b _ _ _` the water. :material/water_drop:",
-    value=stss.ans3_val,
+ans3 = st.radio(
+    "3. ข้อใดคือ \"float\" ใน python",
+    key=stss.ans3_val,
 )
-ans4 = st.text_input(
-    "ข้อ 4: `M _ _ _` the butter in the pan. :material/breakfast_dining:",
-    value=stss.ans4_val,
+ans4 = st.radio(
+    "4. ข้อใดคือ \"string\" ใน python",
+    key=stss.ans4_val,
 )
 
 stss.ans1_val = ans1
