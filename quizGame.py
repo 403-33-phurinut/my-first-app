@@ -1,7 +1,7 @@
 import time
 import streamlit as st
 
-stss = stss
+stss = st.session_state
 st.markdown("# :green[***:material/Timer: Challenge Quiz Game***]")
 st.write("*เกมที่คุณเลือกโค้ดที่ใช้งานได้ให้ทันภายในเวลา*")
 st.divider()
